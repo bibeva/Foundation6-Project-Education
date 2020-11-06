@@ -1,0 +1,108 @@
+body {
+  overflow-x: hidden;
+
+  .marginBtm {
+    margin-bottom: 50px;
+
+    @include breakpoint(small down) { 
+      margin-bottom: 30px;
+    }
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  main {
+    overflow-x: hidden;
+  }
+}
+
+// form
+form {
+  textarea {
+    min-height: 120px;
+    height: 120px;
+  }
+}
+
+// block
+.block {
+  padding: 70px 0;
+
+  @include breakpoint(small down) { 
+    padding: 30px 0;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  h2 {
+    position: relative;
+    padding: 0 0 20px;
+    margin: 0 0 50px;
+
+    @include breakpoint(small down) { 
+      padding: 0 0 10px;
+      margin: 0 0 30px;
+    }
+
+    &:before {
+      content: '';
+      background: $primary-color;
+      width: 70px;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include breakpoint(small down) { 
+        width: 50px;
+      }
+    }
+  }
+}
+
+// reveal modal
+.reveal {
+  padding: 2.5rem 1rem 1rem !important;
+
+  p {
+    margin: 0 0 20px;
+  }
+}
+
+// breadcrumb
+.breadcrumbs {
+  margin: 0;
+  padding: 20px 0;
+  position: relative;
+  color: $white;
+
+  &:before {
+    content: '';
+    background: lighten($black, 3%);
+    position: absolute;
+    display: block !important;
+    top: 0;
+    bottom: 0;
+    left: -999px;
+    right: -999px;
+  }
+
+  li {
+    position: relative;
+    color: lighten($primary-color, 15%) !important;
+  }
+
+  a {
+    color: $white !important;
+  }
+}
+
+// accordion
+.accordion-title {
+  font: 15px/1.4 $header-font-family !important;
+}

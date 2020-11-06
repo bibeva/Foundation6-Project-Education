@@ -1,0 +1,18 @@
+.aboutus {
+  .tabs {
+    a {
+      font: 15px/1.4 $header-font-family;
+      color: $primary-color;
+
+      @include breakpoint(small down) {
+        padding: 15px 10px;
+      }
+    }
+  }
+
+  .image {
+    @include breakpoint(small down) {
+      margin: 0 0 25px;
+    }
+  }
+}

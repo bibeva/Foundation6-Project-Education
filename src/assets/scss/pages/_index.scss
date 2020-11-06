@@ -1,0 +1,65 @@
+// hero
+.orbit {
+  .orbit-caption {
+    text-align: center;
+
+    @include breakpoint(small down) {
+      display: none;
+    }
+  }
+}
+
+// popular courses
+.popularCourses {
+  .button {
+    i {
+      font-size: 12px;
+      margin: 0 0 0 5px;
+    }
+  }
+}
+
+// register now
+.registerNow {
+  font-size: 20px;
+
+  .columns {
+    max-width: 640px;
+    margin: auto;
+  }
+
+  h3 {
+    font-size: 30px;
+    margin: 0 0 20px;
+  }
+
+  p {
+    margin: 0 0 30px;
+  }
+
+  .button {
+    i {
+      margin: 0 5px 0 0;
+      font-size: 16px;
+    }
+  }
+}
+
+// our schedule
+.ourSchedule {
+  table {
+    th, td {
+      padding: 25px 20px;
+
+      @include breakpoint(small down) {
+        padding: 10px;
+      }
+    }
+
+    th {
+      background: $secondary-color;
+      color: $white;
+      font-family: $header-font-family;
+    }
+  }
+}
